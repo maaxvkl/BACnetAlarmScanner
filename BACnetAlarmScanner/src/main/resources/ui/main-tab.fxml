@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<SplitPane xmlns="http://javafx.com/javafx/21"
+           xmlns:fx="http://javafx.com/fxml"
+           fx:controller="scanner.ui.MainTabController"
+           dividerPositions="0.5">
+
+    <!-- LINKS: Scan / Device -->
+    <VBox spacing="10">
+        <padding>
+            <Insets top="10" right="10" bottom="10" left="10"/>
+        </padding>
+
+        <Label text="Scan-Settings"
+               styleClass="section-title"/>
+
+        <GridPane hgap="10" vgap="10">
+            <Label text="IP-Address:" GridPane.rowIndex="0"/>
+            <TextField fx:id="ipAddressField"
+                       GridPane.rowIndex="0"
+                       GridPane.columnIndex="1"/>
+
+            <Label text="Scantime (s):" GridPane.rowIndex="1"/>
+            <TextField fx:id="discoveryTime"
+                       GridPane.rowIndex="1"
+                       GridPane.columnIndex="1"/>
+        </GridPane>
+    </VBox>
+
+    <!-- RECHTS: Datentyp-Auswahl -->
+    <VBox spacing="10">
+        <padding>
+            <Insets top="10" right="10" bottom="10" left="10"/>
+        </padding>
+
+        <Label text="Datentypen"
+               styleClass="section-title"/>
+
+        <CheckBox text="Binary Value"
+                  fx:id="bvCheck"/>
+
+        <CheckBox text="Binary Input"
+                  fx:id="biCheck"/>
+
+        <CheckBox text="Analog Input"
+                  fx:id="aiCheck"/>
+
+    </VBox>
+
+</SplitPane>

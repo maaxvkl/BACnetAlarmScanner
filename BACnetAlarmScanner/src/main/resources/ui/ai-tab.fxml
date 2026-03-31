@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="scanner.ui.AnalogInputTabController"
+      spacing="10">
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+
+    <Label text="Analog Input Properties"
+           styleClass="section-title"/>
+
+    <CheckBox text="PresentValue"
+              fx:id="presentValueCheck"/>
+
+    <CheckBox text="Units"
+              fx:id="unitsCheck"/>
+
+    <CheckBox text="Out of Service"
+              fx:id="outOfServiceCheck"/>
+
+</VBox>

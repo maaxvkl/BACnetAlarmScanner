@@ -1,0 +1,88 @@
+.section-title{
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #000000;
+    -fx-padding: 0 0 5 0;
+}
+
+.root {
+    -fx-font-family: "Segoe UI", "Arial";
+    -fx-font-size: 13px;
+    -fx-background-color: #f3f0e8; /* Retro Beige */
+}
+
+/* Panels */
+.vbox, .hbox, .grid-pane {
+    -fx-background-color: transparent;
+}
+
+/* Labels */
+.label {
+    -fx-text-fill: #000000;
+    -fx-font-weight: bold;
+}
+
+/* Checkbox */
+.check-box {
+    -fx-text-fill: #000000;
+}
+
+.check-box .box {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #000000;
+    -fx-border-width: 1px;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+}
+
+.check-box:selected .mark {
+    -fx-background-color: #000000;
+}
+
+/* TextFields */
+.text-field {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #000000;
+    -fx-border-width: 1px;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+}
+
+/* Buttons */
+.button {
+    -fx-background-color: #e6e0cf;
+    -fx-border-color: #000000;
+    -fx-border-width: 1px;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-text-fill: #000000;
+    -fx-font-weight: bold;
+}
+
+.button:hover {
+    -fx-background-color: #ded7c3;
+}
+
+.button:default {
+    -fx-background-color: #cfd8e6;
+}
+
+/* Footer */
+.hbox {
+    -fx-background-color: #ebe6d8;
+}
+
+/* Tabs */
+.tab-pane .tab-header-area {
+    -fx-background-color: #e0dac8;
+}
+
+.tab-pane .tab {
+    -fx-background-color: #ded7c3;
+    -fx-border-color: #000000;
+    -fx-border-width: 1px;
+}
+
+.tab-pane .tab:selected {
+    -fx-background-color: #ffffff;
+}

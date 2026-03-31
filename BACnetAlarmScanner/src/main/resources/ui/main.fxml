@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="scanner.ui.MainController"
+            stylesheets="@/styles/retro.css">
+
+    <center>
+        <TabPane fx:id="tabPane">
+            <Tab text="Allgemein">
+                <content>
+                    <fx:include fx:id="mainTabInclude" source="main-tab.fxml"/>
+                </content>
+            </Tab>
+            <Tab text="Binary Value" fx:id="bvTab">
+                <content>
+                    <fx:include fx:id="binaryValueTabInclude" source="bv-tab.fxml"/>
+                </content>
+            </Tab>
+            <Tab text="Binary Input" fx:id="biTab">
+                <content>
+                    <fx:include fx:id="binaryInputTabInclude" source="bi-tab.fxml"/>
+                </content>
+            </Tab>
+            <Tab text="Analog Input" fx:id="aiTab">
+                <content>
+                    <fx:include fx:id="analogInputTabInclude" source="ai-tab.fxml"/>
+                </content>
+            </Tab>
+        </TabPane>
+    </center>
+
+    <!-- FOOTER -->
+    <bottom>
+        <HBox spacing="10" alignment="CENTER_LEFT">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+            <Label fx:id="statusLabel"
+                   text="Bereit"
+                   HBox.hgrow="ALWAYS"/>
+
+            <Button text="Scan"
+                    onAction="#startScan"
+                    disable="false"/>
+
+            <Button text="Cancel"
+                    onAction="#cancelScan"
+                    fx:id="cancelButton"
+                    disable="true"/>
+        </HBox>
+    </bottom>
+</BorderPane>
