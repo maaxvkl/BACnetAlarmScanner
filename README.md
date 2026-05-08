@@ -27,7 +27,9 @@ This process is often manual, time-consuming and requires deep system knowledge.
 
 ## Solution
 
-The BACnet Diagnostic Scanner is designed as a lightweight engineering tool to support technical workflows in building automation.
+The BACnet Alarm Scanner is designed as a lightweight engineering tool to support technical workflows in building automation.
+
+![GUI](screenshots/GUI.png)
 
 It enables:
 
@@ -77,7 +79,7 @@ Instead of manually navigating through multiple devices:
 
 ## Example Output
 
-![Excel log file](screenshots/GUI.png)
+![Excel log file](screenshots/faults.png)
 
 - Structured alarm/status data
 - Easy filtering and post-processing
